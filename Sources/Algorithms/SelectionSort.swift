@@ -18,6 +18,7 @@ public extension Array where Element: Comparable {
                     minIndex = j
                 }
             }
+            guard i != minIndex else { continue }
             swapAt(i, minIndex)
         }
     }

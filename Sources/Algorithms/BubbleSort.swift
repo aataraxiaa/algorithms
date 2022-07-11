@@ -13,12 +13,13 @@ public extension Array where Element: Comparable {
     mutating func bubbleSort() {
         for i in 0..<count {
             var swapped = false
-            for j in 0..<count - 1 - i {
+            for j in 0..<count-1-i {
                 if self[j] > self[j+1] {
                     swapAt(j, j+1)
                     swapped = true
                 }
             }
+
             if !swapped {
                 return
             }
