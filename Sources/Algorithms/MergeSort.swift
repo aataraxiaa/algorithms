@@ -13,11 +13,7 @@ public extension Array where Element: Comparable {
     mutating func mergeSort() {
         guard count > 1 else { return }
 
-        print("Array: \(self)")
-
         let midpoint = count/2
-
-        print("midpoint: \(midpoint)")
 
         var left = Array(self[0..<midpoint])
         var right = Array(self[midpoint..<count])
@@ -49,8 +45,6 @@ public extension Array where Element: Comparable {
             j += 1
             k += 1
         }
-
-        print("Sorted: \(self)")
     }
 }
 

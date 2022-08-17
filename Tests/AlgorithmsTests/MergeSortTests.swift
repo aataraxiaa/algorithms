@@ -36,7 +36,7 @@ final class MergeSortTests: XCTestCase {
 
     func testMergeSortMixedCase() {
         // given
-        var input = [2,4,3,5,1,7,6]
+        var input = [2,4,3,6,5,7,1]
         let expected = [1,2,3,4,5,6,7]
 
         // when
